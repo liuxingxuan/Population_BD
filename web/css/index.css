@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.cesium-viewer-bottom {
+    display: none;
+}
+
+.charts {
+    background: rgba(54, 58, 66, 0.75);
+}
+
+#fullScreenCharts {
+    position: absolute;
+    top: 5%;
+    background: rgba(54, 58, 66, 1);
+    z-index: 99;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#Title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-left: 1em;
+    z-index: 9;
+    font-size: 2.5vh;
+    background: rgba(54, 58, 66, 0.75);
+    height: 5vh;
+    line-height: 5vh;
+    box-sizing: border-box;
+    letter-spacing: 0.2em;
+}
+
+#POIControl {
+    position: absolute;
+    top: 6%;
+    left: 95px;
+    z-index: 9;
+    width: 18vh;
+    display: none;
+}
+
+.POIItem {
+    height: 3.5vh;
+    line-height: 3.5vh;
+    cursor: pointer;
+}
+
+.POIItem .POIItemImage {
+    height: 4vh;
+    width: 3vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3vh 3vh;
+    float: left;
+    margin-right: 1vh;
+    padding-left: 2vh;
+}
+
+.POIItemImage.jb {
+    background-image: url(../img/jiuba.png);
+}
+
+.POIItemImage.bld {
+    background-image: url(../img/bianlidian.png);
+}
+
+.POIItemImage.ydjs {
+    background-image: url(../img/jianshenfang.png);
+}
+
+.POIItemImage.kfg {
+    background-image: url(../img/kafeiguan.png);
+}
+
+.POIItemImage.sgsx {
+    background-image: url(../img/shuiguodian.png);
+}
+
+.POIItemImage.cs {
+    background-image: url(../img/chaoshi.png);
+}
+
+.POIItemImage.yd {
+    background-image: url(../img/yaodian.png);
+}
+
+.POIItemImage.sqfw {
+    background-image: url(../img/shequfuwu.png);
+}
+
+.POIItemImage.dt {
+    background-image: url(../img/ditie.png);
+}
+
+.POIItemImage.gj {
+    background-image: url(../img/gongjiaozhan.png);
+}
+
+.POIItem .POIItemText {
+    color: white;
+    width: 5.5em;
+    font-size: 1.4vh;
+    letter-spacing: 0.1em;
+    line-height: 4vh;
+    height: 4vh;
+    float: left;
+    margin-right: 1vh;
+}
+
+.POIItem.selected .POIItemText {
+    color: #41d1ff;
+}
+
+.POIItem>.POIItemSelect {
+    width: 2vh;
+    height: 4vh;
+    line-height: 4vh;
+    background-image: url(../img/xuanzhogn.png);
+    background-size: 2vh 2vh;
+    background-position: 0;
+    background-repeat: no-repeat;
+    float: left;
+    display:none;
+}
+
+#PKBDSelect {
+    position: absolute;
+    top: 6%;
+    left: 95px;
+    z-index: 9;
+    width: 12vh;
+    display: none;
+}
+#PKBDSelect .POIItem .BDContainer{
+    position: relative;
+    top:-3vh;
+    left: 12vh;
+    display: none;
+    width: 20vh;
+    max-height: 30vh;
+    overflow-y: auto;
+}
+#PKBDSelect .POIItem>.POIItemSelect{
+    background-image: url(../img/liebiao.png);
+    width: 1.5vh;
+    height: 3vh;
+    line-height: 3vh;
+    background-size: auto;
+    background-position-y: 40%;
+}
+#PKBDSelect .POIItem{
+    height: 3vh;
+    line-height: 3vh;
+}
+#PKBDSelect .POIItem .POIItemText{
+    padding-left: 1em;
+    width: 4.5em;
+    height: 3vh;
+    line-height: 3vh;
+}
+.BDItem{
+    color:white;
+    padding-left: 1em;
+}
+.BDItem.selected{
+    color: #41d1ff;
+}
+
+#indexBar {
+    position: absolute;
+    height: 93%;
+    width: 90px;
+    background: rgba(54, 58, 66, 0.75);
+    top: 6%;
+    z-index: 2;
+    left: -90px;
+}
+
+.indexBarItem {
+    color: white;
+    font-family: 'Microsoft YaHei';
+    margin: 20px 5px;
+    padding: 5px 3px;
+    padding-left: 5px;
+    cursor: pointer;
+    border-radius: 0.25em;
+    letter-spacing: 0.1em;
+    font-size: 1.6vh;
+}
+
+.indexBarItem:hover, .indexBarItem.selected {
+    background-color: rgb(31, 114, 138);
+}
+
+.chartsTitle {
+    color: rgb(122, 225, 255);
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    padding: 2% 0px;
+}
+
+#fullScreenCharts .chartsTitle {
+    font-size: 3ch;
+}
+
+#ToolBar {
+    background-color: rgba(41, 45, 53, 0.75) !important;
+    position: absolute;
+    top: 6%;
+    width: 48%;
+    color: rgb(114, 202, 243);
+    z-index: 9;
+    font-size: 1.5vh;
+    line-height: 4vh;
+    height: 4vh;
+    left: 26%;
+}
+
+select {
+    padding: 0.35em 1em;
+    padding-right: 2.5em;
+    margin: 0em 0.5em;
+    background: rgba(54, 58, 66, 0.75);
+    color: white;
+    font-size: 1.6vh;
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../img/selectarrow.png") no-repeat scroll right center rgba(41, 45, 53, 0.75);
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#legend {
+    position: absolute;
+    bottom: 1%;
+    right: 26%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 1%;
+}
+
+.legendItem {
+    height: 25px;
+    line-height: 25px;
+}
+
+.legendItemColor {
+    float: left;
+    width: 25px;
+    height: 20px;
+    margin-top: 2.5px;
+}
+
+.legendItemText {
+    float: left;
+    height: 25px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/*定义滚动条高宽及背景*/
+
+body ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(171, 171, 177, 0.54);
+}
+
+/*定义滚动条*/
+
+body ::-webkit-scrollbar-thumb:vertical {
+    border: 2px solid rgb(171, 171, 177);
+    background-color: rgb(208, 209, 213);
+    height: 40px;
+    background-image: url(../image/main/lines1.png);
+    border-radius: 0px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body ::-webkit-scrollbar-thumb:horizontal {
+    border: 2px solid rgb(171, 171, 177);
+    background-color: rgb(208, 209, 213);
+    width: 40px;
+    background-image: url(../image/main/lines2.png);
+    border-radius: 0px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body ::-webkit-scrollbar-corner {
+    background-color: rgb(171, 171, 177);
+}
+
+/* end-滚动条 */
+
+#ht{
+    font-size: 1.8vh;
+    float: right;
+    margin-right: 1em;
+    cursor: pointer;
+}
+#ht:hover{
+    color:rgb(122, 225, 255);
+}
+
+.esri-ui-top-left,.esri-attribution{
+    display: none !important;
+}

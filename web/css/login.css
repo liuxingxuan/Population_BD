@@ -1,0 +1,251 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/shangquan.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-filter: blur(1000px);
+    -webkit-animation:blur 10s infinite;
+}
+
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(10px);
+    }
+    50% {
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        -webkit-filter: blur(10px);
+    }
+}
+
+#loginPanel {
+    position: absolute;
+    z-index: 1;
+    padding: 0px;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #161c23;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.login-title {
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    top: 22%;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    background-image: -webkit-linear-gradient(bottom, rgb(65, 105, 225), rgb(144, 162, 186), rgb(211, 235, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+mg.scaleout {
+    -webkit-animation: scaleout 1.3s infinite ease-in-out;
+    animation: scaleout 1.3s infinite ease-in-out;
+}
+
+img.glow:hover {
+    -webkit-animation: glow-in 800ms ease-out infinite alternate;
+    animation: glow-in 800ms ease-out infinite alternate;
+    box-shadow: 5px 5px 5px rgba(0, 255, 0, .2), inset 5px 5px 5px rgba(0, 255, 0, .1);
+    color: #efe;
+    border: none;
+    outline: none;
+}
+
+.login-title img.broken:after {
+    content: "\f1c5" " " attr(alt);
+    font-size: 16px;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.login-file-import {
+    width: 871px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    top: 27%;
+    font-size: 36px;
+    color: #fff;
+}
+
+.btn-w500 {
+    margin: 0 auto;
+    padding: 10px 0px 0px 30px;
+    width: 450px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100px;
+    background: rgba(33, 43, 47, 0.6);
+    border: 1px solid rgba(51, 153, 255, 1);
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.btn-w500:hover {
+    background: rgba(33, 43, 47, 0.6);
+}
+
+.login-footer {
+    width: 100%;
+    height: 57px;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    font-family: Microsoft YaHei UI;
+    letter-spacing: 2px;
+}
+
+.login-footer p.version {
+    font-size: 14px;
+}
+
+.login_user {
+    display: inline-block;
+    background-image: url(../img/admin.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    top: -6px;
+}
+
+.login_pass {
+    display: inline-block;
+    background-image: url(../img/pass.png);
+    height: 30px;
+    width: 27px;
+    background-size: cover;
+    top: -6px;
+}
+
+div.login_user_bar {
+    position: relative;
+    width: 2px;
+    height: 18px;
+    display: inline-block;
+    background: rgba(51, 153, 255, 1);
+    top: -13px;
+}
+
+button#btnLogin {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    display: block;
+    font-size: 25px;
+    font-family: Microsoft YaHei UI;
+    position: relative;
+    top: -5px;
+    outline: none;
+}
+
+.v-align-tp {
+    vertical-align: text-top;
+}
+
+i.login_user {
+    background-image: url(../img/admin.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    top: -6px;
+}
+
+div.login_user_bar {
+    position: relative;
+    width: 2px;
+    height: 18px;
+    display: inline-block;
+    background: rgba(51, 153, 255, 1);
+    top: -13px;
+}
+
+input.login_input {
+    color: #2397d5;
+    display: inline-block;
+    height: 25px;
+    width: 250px;
+    top: -12px;
+    left: 5px;
+    position: relative;
+    border: 0px;
+    font-size: 22px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+div#button {
+    background: rgba(0, 174, 255, 1);
+}
+
+div#button:hover {
+    background: #49c4ff;
+}
+
+.logoContainer{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    height:13vh;
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+    height:5vh;
+    margin-top: 1vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#logo1{
+    background-image: url(../img/logo1.png);
+}
+#logo2{
+    background-image: url(../img/logo.png);
+}
+
+#logo1{
+    
+}

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\复旦商圈项目\services\WcfService\WcfService\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/DBUtility.dll">
+      <publishTime>07/12/2019 13:36:54</publishTime>
+    </File>
+    <File Include="bin/DBUtility.pdb">
+      <publishTime>07/12/2019 13:36:54</publishTime>
+    </File>
+    <File Include="bin/DotSpatial.Data.dll">
+      <publishTime>04/25/2016 05:49:08</publishTime>
+    </File>
+    <File Include="bin/DotSpatial.Mono.dll">
+      <publishTime>05/28/2013 11:51:44</publishTime>
+    </File>
+    <File Include="bin/DotSpatial.Projections.dll">
+      <publishTime>02/02/2012 14:33:52</publishTime>
+    </File>
+    <File Include="bin/DotSpatial.Projections.Forms.dll">
+      <publishTime>02/02/2012 14:33:52</publishTime>
+    </File>
+    <File Include="bin/DotSpatial.Serialization.dll">
+      <publishTime>02/02/2012 14:33:56</publishTime>
+    </File>
+    <File Include="bin/DotSpatial.Topology.dll">
+      <publishTime>02/02/2012 14:33:58</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ADF.Connection.Core.dll">
+      <publishTime>05/28/2013 16:58:46</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ADF.Connection.dll">
+      <publishTime>05/28/2013 16:58:48</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ADF.Connection.Local.dll">
+      <publishTime>05/28/2013 16:58:50</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ADF.Core.dll">
+      <publishTime>05/28/2013 16:58:24</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ADF.dll">
+      <publishTime>05/28/2013 16:58:40</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ADF.Local.dll">
+      <publishTime>05/28/2013 16:58:52</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.AnalysisTools.dll">
+      <publishTime>05/28/2013 17:00:02</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.AnalysisTools.dll.config">
+      <publishTime>03/15/2011 12:20:32</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.Analyst3DTools.dll">
+      <publishTime>05/28/2013 17:00:02</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.Analyst3DTools.dll.config">
+      <publishTime>03/15/2011 12:20:32</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.AxControls.dll">
+      <publishTime>05/28/2013 15:51:50</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.AxPublisherControls.dll">
+      <publishTime>05/28/2013 15:58:42</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.CartographyTools.dll">
+      <publishTime>05/28/2013 17:00:00</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.CartographyTools.dll.config">
+      <publishTime>03/15/2011 12:20:32</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ConversionTools.dll">
+      <publishTime>05/28/2013 16:59:58</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ConversionTools.dll.config">
+      <publishTime>03/15/2011 12:20:32</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.CoverageTools.dll">
+      <publishTime>05/28/2013 16:59:42</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.CoverageTools.dll.config">
+      <publishTime>03/15/2011 12:20:32</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.DataInteroperabilityTools.dll">
+      <publishTime>05/28/2013 16:59:58</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.DataInteroperabilityTools.dll.config">
+      <publishTime>03/15/2011 12:20:32</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.DataManagementTools.dll">
+      <publishTime>05/28/2013 16:59:56</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.DataManagementTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.Desktop.AddIns.dll">
+      <publishTime>05/28/2013 16:02:36</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.Desktop.AddIns.v4.0.dll">
+      <publishTime>05/28/2013 13:36:50</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.EditingTools.dll">
+      <publishTime>05/28/2013 16:59:48</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.EditingTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.GeocodingTools.dll">
+      <publishTime>05/28/2013 16:59:50</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.GeocodingTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.Geoprocessor.dll">
+      <publishTime>05/28/2013 16:59:38</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.GeostatisticalAnalystTools.dll">
+      <publishTime>05/28/2013 16:59:50</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.GeostatisticalAnalystTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.LinearReferencingTools.dll">
+      <publishTime>05/28/2013 16:59:50</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.LinearReferencingTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.MultidimensionTools.dll">
+      <publishTime>05/28/2013 17:00:02</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.MultidimensionTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.NetworkAnalystTools.dll">
+      <publishTime>05/28/2013 16:59:48</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.NetworkAnalystTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ParcelFabricTools.dll">
+      <publishTime>05/28/2013 17:00:04</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ParcelFabricTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SampleTools.dll">
+      <publishTime>05/28/2013 16:59:48</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SampleTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SchematicsTools.dll">
+      <publishTime>05/28/2013 16:59:42</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SchematicsTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ServerTools.dll">
+      <publishTime>05/28/2013 16:59:42</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.ServerTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SpatialAnalystTools.dll">
+      <publishTime>05/28/2013 16:59:48</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SpatialAnalystTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SpatialStatisticsTools.dll">
+      <publishTime>05/28/2013 16:59:44</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.SpatialStatisticsTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.TrackingAnalystTools.dll">
+      <publishTime>05/28/2013 16:59:40</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.TrackingAnalystTools.dll.config">
+      <publishTime>03/15/2011 12:20:34</publishTime>
+    </File>
+    <File Include="bin/ESRI.ArcGIS.Version.dll">
+      <publishTime>05/28/2013 13:26:30</publishTime>
+    </File>
+    <File Include="bin/ExcelDataReader.DataSet.dll">
+      <publishTime>03/01/2019 15:47:46</publishTime>
+    </File>
+    <File Include="bin/ExcelDataReader.DataSet.pdb">
+      <publishTime>03/01/2019 15:47:46</publishTime>
+    </File>
+    <File Include="bin/ExcelDataReader.dll">
+      <publishTime>03/01/2019 15:47:34</publishTime>
+    </File>
+    <File Include="bin/ExcelDataReader.pdb">
+      <publishTime>03/01/2019 15:47:34</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/27/2018 18:07:34</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.pdb">
+      <publishTime>11/27/2018 17:59:08</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>02/26/2019 10:30:28</publishTime>
+    </File>
+    <File Include="bin/WcfService.dll">
+      <publishTime>07/19/2019 14:50:27</publishTime>
+    </File>
+    <File Include="bin/WcfService.pdb">
+      <publishTime>07/19/2019 14:50:27</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/10/2019 16:28:38</publishTime>
+    </File>
+    <File Include="Service.svc">
+      <publishTime>04/10/2019 16:12:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/12/2019 10:40:30</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

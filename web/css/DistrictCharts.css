@@ -1,0 +1,168 @@
+.DistrictChartsBack{
+    background-color:rgba(41,45,53,0.75) !important;
+}
+
+#DistrictCharts2 .DistrictCharts2Item{
+    height: 12%;
+    width: 90%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left: 5%;
+}
+#DistrictCharts2 .DistrictCharts2Item div{
+    text-align: center;
+    display: inline-block;
+}
+#DistrictCharts2 .DistrictCharts2Item div.one{
+    width:10%;
+}
+#DistrictCharts2 .DistrictCharts2Item div.two{
+    width: 45%;
+}
+#DistrictCharts2 .DistrictCharts2Item div.three{
+    height:30px;
+    width:10px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:5px;
+}
+#DistrictCharts2 .DistrictCharts2Item div.three.d{
+    background-image: url(../img/xiaoren_d.png);
+}
+#DistrictCharts2 .DistrictCharts2Item div.three.n{
+    background-image: url(../img/xiaoren_n.png);
+}
+#DistrictCharts2 .DistrictCharts2Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#DistrictCharts2 .DistrictCharts2Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#DistrictCharts2 .DistrictCharts2Item div span.first{
+    background: #9e3c3f;
+}
+#DistrictCharts2 .DistrictCharts2Item div span.second{
+    background: #945b1f;
+}
+#DistrictCharts2 .DistrictCharts2Item div span.third{
+    background: #877223;
+}
+#DistrictCharts2 .DistrictCharts2Item div span.rest{
+    background: rgb(23,24,27);
+}
+
+#fullScreenCharts .DistrictCharts2Item{
+    height: 8%;
+    width: 90%;
+    margin-bottom: 1%;
+    color: white;
+    font-size: 2vh;
+    padding-left:25%;
+}
+#fullScreenCharts .DistrictCharts2Item div{
+    text-align: center;
+    display: inline-block;
+}
+#fullScreenCharts .DistrictCharts2Item div.one{
+    width:10%;
+}
+#fullScreenCharts .DistrictCharts2Item div.two{
+    width: 25%;
+}
+#fullScreenCharts .DistrictCharts2Item div.three{
+    height:30px;
+    width:10px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:5px;
+}
+#fullScreenCharts .DistrictCharts2Item div.three.d{
+    background-image: url(../img/xiaoren_d.png);
+}
+#fullScreenCharts .DistrictCharts2Item div.three.n{
+    background-image: url(../img/xiaoren_n.png);
+}
+#fullScreenCharts .DistrictCharts2Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#fullScreenCharts .DistrictCharts2Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#fullScreenCharts .DistrictCharts2Item div span.first{
+    background: #9e3c3f;
+}
+#fullScreenCharts .DistrictCharts2Item div span.second{
+    background: #945b1f;
+}
+#fullScreenCharts .DistrictCharts2Item div span.third{
+    background: #877223;
+}
+#fullScreenCharts .DistrictCharts2Item div span.rest{
+    background: rgb(23,24,27);
+}
+
+#DistrictCharts6 .DistrictCharts6Item{
+    height: 12%;
+    width: 90%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left: 5%;
+}
+#DistrictCharts6 .DistrictCharts6Item div{
+    text-align: center;
+    display: inline-block;
+}
+#DistrictCharts6 .DistrictCharts6Item div.one{
+    width:5%;
+}
+#DistrictCharts6 .DistrictCharts6Item div.two{
+    width: 50%;
+}
+#DistrictCharts6 .DistrictCharts6Item div.three{
+    height:26px;
+    width:26px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:2px;
+}
+#DistrictCharts6 .DistrictCharts6Item div.three.d{
+    background-image: url(../img/huangxing.png);
+}
+#DistrictCharts6 .DistrictCharts6Item div.three.dhalf{
+    background-image: url(../img/banxing.png);
+}
+#DistrictCharts6 .DistrictCharts6Item div.three.n{
+    background-image: url(../img/heixing.png);
+}
+#DistrictCharts6 .DistrictCharts6Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#DistrictCharts6 .DistrictCharts6Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#DistrictCharts6 .DistrictCharts6Item div span.first{
+    background: #9e3c3f;
+}
+#DistrictCharts6 .DistrictCharts6Item div span.second{
+    background: #945b1f;
+}
+#DistrictCharts6 .DistrictCharts6Item div span.third{
+    background: #877223;
+}
+#DistrictCharts6 .DistrictCharts6Item div span.rest{
+    background: rgb(23,24,27);
+}

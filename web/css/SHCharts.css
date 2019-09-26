@@ -1,0 +1,227 @@
+.SHChartsBack{
+    background-color:rgba(41,45,53,0.75) !important;
+}
+
+#SHCharts2 .SHCharts2Item{
+    height: 12%;
+    width: 90%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left:5%;
+}
+#SHCharts2 .SHCharts2Item div{
+    text-align: center;
+    display: inline-block;
+}
+#SHCharts2 .SHCharts2Item div.one{
+    width:20%;
+}
+#SHCharts2 .SHCharts2Item div.two{
+    width: 30%;
+    text-align: left;
+}
+#SHCharts2 .SHCharts2Item div.three{
+    height:30px;
+    width:10px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:2%;
+}
+#SHCharts2 .SHCharts2Item div.three.d{
+    background-image: url(../img/xiaoren_d.png);
+}
+#SHCharts2 .SHCharts2Item div.three.n{
+    background-image: url(../img/xiaoren_n.png);
+}
+#SHCharts2 .SHCharts2Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#SHCharts2 .SHCharts2Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#SHCharts2 .SHCharts2Item div span.first{
+    background: #9e3c3f;
+}
+#SHCharts2 .SHCharts2Item div span.second{
+    background: #945b1f;
+}
+#SHCharts2 .SHCharts2Item div span.third{
+    background: #877223;
+}
+#SHCharts2 .SHCharts2Item div span.rest{
+    background: rgb(23,24,27);
+}
+
+#fullScreenCharts .SHCharts2Item{
+    height: 6%;
+    width: 90%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left:5%;
+}
+#fullScreenCharts .SHCharts2Item div{
+    text-align: center;
+    display: inline-block;
+}
+#fullScreenCharts .SHCharts2Item div.one{
+    width:20%;
+}
+#fullScreenCharts .SHCharts2Item div.two{
+    width: 30%;
+    text-align: left;
+}
+#fullScreenCharts .SHCharts2Item div.three{
+    height:30px;
+    width:10px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:2%;
+}
+#fullScreenCharts .SHCharts2Item div.three.d{
+    background-image: url(../img/xiaoren_d.png);
+}
+#fullScreenCharts .SHCharts2Item div.three.n{
+    background-image: url(../img/xiaoren_n.png);
+}
+#fullScreenCharts .SHCharts2Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#fullScreenCharts .SHCharts2Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#fullScreenCharts .SHCharts2Item div span.first{
+    background: #9e3c3f;
+}
+#fullScreenCharts .SHCharts2Item div span.second{
+    background: #945b1f;
+}
+#fullScreenCharts .SHCharts2Item div span.third{
+    background: #877223;
+}
+#fullScreenCharts .SHCharts2Item div span.rest{
+    background: rgb(23,24,27);
+}
+
+#SHCharts6 .SHCharts6Item{
+    height: 12%;
+    width: 90%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left: 5%;
+}
+#SHCharts6 .SHCharts6Item div{
+    text-align: center;
+    display: inline-block;
+}
+#SHCharts6 .SHCharts6Item div.one{
+    width:5%;
+}
+#SHCharts6 .SHCharts6Item div.two{
+    width: 50%;
+}
+#SHCharts6 .SHCharts6Item div.three{
+    height:26px;
+    width:26px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:2px;
+}
+#SHCharts6 .SHCharts6Item div.three.d{
+    background-image: url(../img/huangxing.png);
+}
+#SHCharts6 .SHCharts6Item div.three.dhalf{
+    background-image: url(../img/banxing.png);
+}
+#SHCharts6 .SHCharts6Item div.three.n{
+    background-image: url(../img/heixing.png);
+}
+#SHCharts6 .SHCharts6Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#SHCharts6 .SHCharts6Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#SHCharts6 .SHCharts6Item div span.first{
+    background: #9e3c3f;
+}
+#SHCharts6 .SHCharts6Item div span.second{
+    background: #945b1f;
+}
+#SHCharts6 .SHCharts6Item div span.third{
+    background: #877223;
+}
+#SHCharts6 .SHCharts6Item div span.rest{
+    background: rgb(23,24,27);
+}
+
+#fullScreenCharts .SHCharts6Item{
+    height: 5%;
+    width: 90%;
+    margin-bottom: 1%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left: 5%;
+}
+#fullScreenCharts .SHCharts6Item div{
+    text-align: center;
+    display: inline-block;
+}
+#fullScreenCharts .SHCharts6Item div.one{
+    width:5%;
+}
+#fullScreenCharts .SHCharts6Item div.two{
+    width: 50%;
+}
+#fullScreenCharts .SHCharts6Item div.three{
+    height:26px;
+    width:26px;
+    background-size: contain;
+    position: relative;
+    top:6px;
+    margin-right:2px;
+}
+#fullScreenCharts .SHCharts6Item div.three.d{
+    background-image: url(../img/huangxing.png);
+}
+#fullScreenCharts .SHCharts6Item div.three.dhalf{
+    background-image: url(../img/banxing.png);
+}
+#fullScreenCharts .SHCharts6Item div.three.n{
+    background-image: url(../img/heixing.png);
+}
+#fullScreenCharts .SHCharts6Item div span{
+    height: 30px;
+    color:white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+#fullScreenCharts .SHCharts6Item div span.oneString{
+    padding: 0.25em 0.7em;
+}
+#fullScreenCharts .SHCharts6Item div span.first{
+    background: #9e3c3f;
+}
+#fullScreenCharts .SHCharts6Item div span.second{
+    background: #945b1f;
+}
+#fullScreenCharts .SHCharts6Item div span.third{
+    background: #877223;
+}
+#fullScreenCharts .SHCharts6Item div span.rest{
+    background: rgb(23,24,27);
+}

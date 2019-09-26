@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="library/jQuery-2.1.4.min.js"></script>
+    <script src='library/turf.min.js'></script>
+    <script src='library/html2canvas.min.js'></script>
+    <script src='library/echarts.min.js'></script>
+    <script src="library/Cesium-1.54/Build/Cesium/Cesium.js"></script>
+    <script src='library/CesiumHeatmap.js'></script>
+    <link rel="stylesheet" type="text/css" href="library/Cesium-1.54/Build/Cesium/Widgets/widgets.css" />
+    <link rel='stylesheet' type='text/css' href='css/DistrictCharts.css' />
+    <link rel='stylesheet' type='text/css' href='css/CityCharts.css' />
+    <link rel='stylesheet' type='text/css' href='css/SHCharts.css' />
+    <link rel='stylesheet' type='text/css' href='css/BDCharts.css' />
+    <link rel='stylesheet' type='text/css' href='css/FlowCharts.css' />
+    <link rel='stylesheet' type='text/css' href='css/index.css' />
+    <title>上海人口信息数字化决策支持系统</title>
+</head>
+
+<body>
+    <div id='Title'>上海人口信息数字化决策支持系统<span id='ht'>后台管理</span></div>
+    <div id='ToolBar' style='display:none'>
+    </div>
+    <div id='indexBar' style='display:block'>
+        <div class='indexBarItem' value='city'>城市间</div>
+        <div class='indexBarItem' value='sh'>上海市</div>
+        <div class='indexBarItem' value='district'>行政区</div>
+        <div class='indexBarItem' value='bd'>街道</div>
+        <div class='indexBarItem' value='poi'>便民设施</div>
+        <div class='indexBarItem' value='pk'>PK</div>
+        <div class='indexBarItem' value='analyze'>分析报告</div>
+    </div>
+    <div id="cesiumContainer" style='display: block'></div>
+    <div id="mapContainer" style=></div>
+    <!-- <iframe src='arcgisTest.html' style='width: 100%;height: 969px;'></iframe> -->
+
+    <div id='cityChartsBack' class='SHChartsBack'
+        style='z-index:2;position:absolute;bottom:0%;right:0;width:26%;height:95%;display:none'></div>
+
+    <div class='cityChartsTitle'
+        style='z-index:4;position:absolute;top:5%;left:75%;width: 130px;;height:30px;display:none'>
+        <span>外来人口数据</span></div>
+        
+    <!-- <div id='cityChartsChange' style='z-index:4;position:absolute;top:5%;width: 120px;;height:30px;display:none'> -->
+        <!-- <span value='In'>输入</span><span value='Out'>输出</span></div> -->
+    <select id='cityChartsYear' style='z-index:4;position:absolute;top:5%;width: 90px;;height:30px;display:none;padding-right:0.5em'>
+    </select>
+    <select id='cityChartsMonth' style='z-index:4;position:absolute;top:5%;width: 75px;;height:30px;display:none;padding-right:0.5em'>
+    </select>
+    <div id='cityCharts1' class='chartContainer charts'
+        style='z-index:3;position:absolute;top:5%;right:0;width:25%;height:70%;display:none'></div>
+    <div class='cityChartsTitle' id='cityCharts2Title'
+        style='z-index:4;position:absolute;left:75%;width: 130px;;height:30px;display:none'>
+        <span>人口统计占比TOP5</span>
+    </div>
+    <div id='cityCharts2' class='chartContainer charts'
+        style='z-index:3;position:absolute;bottom:0;right:0;width:25%;height:25%;display:none'></div>
+
+    <!-- 上海市表格 -->
+    <div class='leftCharts SHCharts SHChartsBack' style='position:absolute;top:5%;left:0;height:95%;display:none;'>
+    </div>
+    <div class='SHCharts SHChartsBack' style='position:absolute;top:5%;right:0;height:95%;display:none;'></div>
+    <div id='SHCharts1' class='charts leftCharts SHCharts'
+        style='position:absolute;top:6%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='SHCharts2' class='charts leftCharts SHCharts'
+        style='position:absolute;top:37%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='SHCharts3' class='charts leftCharts SHCharts'
+        style='position:absolute;top:68%;left:0;width:25%;height:31%;display:none;'>
+    </div>
+    <div id='SHCharts4' class='charts SHCharts'
+        style='position:absolute;top:6%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='SHCharts5' class='charts SHCharts'
+        style='position:absolute;top:37%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='SHCharts6' class='charts SHCharts'
+        style='position:absolute;top:68%;right:0;width:25%;height:31%;display:none;'>
+    </div>
+
+    <!-- 区表格 -->
+    <div class='leftCharts DistrictCharts DistrictChartsBack'
+        style='position:absolute;top:5%;left:0;height:95%;display:none;'></div>
+    <div class='DistrictCharts DistrictChartsBack' style='position:absolute;top:5%;right:0;height:95%;display:none;'>
+    </div>
+    <div id='DistrictCharts1' class='charts leftCharts DistrictCharts'
+        style='position:absolute;top:6%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='DistrictCharts2' class='charts leftCharts DistrictCharts'
+        style='position:absolute;top:37%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='DistrictCharts3' class='charts leftCharts DistrictCharts'
+        style='position:absolute;top:68%;left:0;width:25%;height:31%;display:none;'>
+    </div>
+    <div id='DistrictCharts4' class='charts DistrictCharts'
+        style='position:absolute;top:6%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='DistrictCharts5' class='charts DistrictCharts'
+        style='position:absolute;top:37%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='DistrictCharts6' class='charts DistrictCharts'
+        style='position:absolute;top:68%;right:0;width:25%;height:31%;display:none;'>
+    </div>
+
+    <!-- 街道表格 -->
+    <div class='leftCharts BDCharts BDChartsBack' style='position:absolute;top:5%;left:0;height:95%;display:none;'>
+    </div>
+    <div class='BDCharts BDChartsBack' style='position:absolute;top:5%;right:0;height:95%;display:none;'></div>
+    <div id='BDCharts7Back' class='leftCharts BDCharts BDChartsBack' style='position:absolute;bottom:0%;display:none;'>
+    </div>
+    <div id='BDCharts1' class='charts leftCharts BDCharts'
+        style='position:absolute;top:6%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='BDCharts2' class='charts leftCharts BDCharts'
+        style='position:absolute;top:37%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='BDCharts3' class='charts leftCharts BDCharts'
+        style='position:absolute;top:68%;left:0;width:25%;height:31%;display:none;'>
+    </div>
+    <div id='BDCharts4' class='charts BDCharts'
+        style='position:absolute;top:6%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='BDCharts5' class='charts BDCharts'
+        style='position:absolute;top:37%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='BDCharts6' class='charts BDCharts'
+        style='position:absolute;top:68%;right:0;width:25%;height:31%;display:none;'>
+    </div>
+    <div id='BDCharts7' class='charts BDCharts'
+        style='position:absolute;top:68%;left:26%;width:48%;height:31%;display:none;'>
+    </div>
+
+    <!-- 便民设施 -->
+    <div class='FlowCharts FlowChartsBack' style='position:absolute;top:5%;right:0;height:61%;display:none;'></div>
+    <div id='FlowCharts1' class='charts FlowCharts'
+        style='position:absolute;top:6%;right:0;width:15%;height:20%;display:none;'></div>
+    <div id='FlowCharts3' class='charts FlowCharts'
+        style='position:absolute;top:27%;right:0;width:15%;height:38%;display:none;'></div>
+    <div id='FlowCharts2' class='charts FlowCharts'
+        style='position:absolute;top:68%;left:26%;width:48%;height:31%;display:none;'>
+    </div>
+    <div id='POIControl' class='charts'>
+        <div class='POIItem' value='酒吧'>
+            <div class='POIItemImage jb'></div>
+            <div class='POIItemText'>酒吧</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='便利店'>
+            <div class='POIItemImage bld'></div>
+            <div class='POIItemText'>便利店</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='咖啡馆'>
+            <div class='POIItemImage kfg'></div>
+            <div class='POIItemText'>咖啡馆</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='运动健身'>
+            <div class='POIItemImage ydjs'></div>
+            <div class='POIItemText'>运动健身</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='水果生鲜'>
+            <div class='POIItemImage sgsx'></div>
+            <div class='POIItemText'>水果生鲜</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='超市'>
+            <div class='POIItemImage cs'></div>
+            <div class='POIItemText'>超市</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='药店'>
+            <div class='POIItemImage yd'></div>
+            <div class='POIItemText'>药店</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='社区服务'>
+            <div class='POIItemImage sqfw'></div>
+            <div class='POIItemText'>社区服务</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='地铁'>
+            <div class='POIItemImage dt'></div>
+            <div class='POIItemText'>地铁</div>
+            <div class='POIItemSelect'></div>
+        </div>
+        <div class='POIItem' value='公交'>
+            <div class='POIItemImage gj'></div>
+            <div class='POIItemText'>公交站</div>
+            <div class='POIItemSelect'></div>
+        </div>
+    </div>
+    <div id='PKBDSelect' class='charts'>
+    </div>
+
+    <!-- 街道比较 -->
+    <div class='leftCharts CompareCharts CompareChartsBack'
+        style='position:absolute;top:5%;left:0;height:95%;display:none;'>
+    </div>
+    <div class='CompareCharts CompareChartsBack' style='position:absolute;top:5%;right:0;height:95%;display:none;'>
+    </div>
+    <div id='CompareCharts7Back' class='leftCharts CompareCharts CompareChartsBack'
+        style='position:absolute;bottom:0%;display:none;'>
+    </div>
+    <div id='CompareCharts1' class='charts leftCharts CompareCharts'
+        style='position:absolute;top:6%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='CompareCharts2' class='charts leftCharts CompareCharts'
+        style='position:absolute;top:37%;left:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='CompareCharts3' class='charts leftCharts CompareCharts'
+        style='position:absolute;top:68%;left:0;width:25%;height:31%;display:none;'>
+    </div>
+    <div id='CompareCharts4' class='charts CompareCharts'
+        style='position:absolute;top:6%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='CompareCharts5' class='charts CompareCharts'
+        style='position:absolute;top:37%;right:0;width:25%;height:30%;display:none;'>
+    </div>
+    <div id='CompareCharts6' class='charts CompareCharts'
+        style='position:absolute;top:68%;right:0;width:25%;height:31%;display:none;'>
+    </div>
+    <div id='CompareCharts7' class='charts CompareCharts'
+        style='position:absolute;top:68%;left:26%;width:48%;height:31%;display:none;'>
+    </div>
+
+    <script type="text/javascript" src="js/config.js?time=201907191303"></script>
+    <script src='data/provincePoint.js'></script>
+    <script src='data/districtPoint.js'></script>
+    <script src='data/shblock.js'></script>
+    <script src='data/blockEnveloped.js'></script>
+
+    <link rel="stylesheet" href="http://47.103.83.153/arcgis_js_api/library/4.12/esri/css/main.css">
+    <script src="http://47.103.83.153/arcgis_js_api/library/4.12/init.js"></script>
+
+    <script src='js/SHCharts.js?time=201907191303'></script>
+    <script src='js/DistrictCharts.js?time=201907191303'></script>
+    <script src='js/BDCharts.js?time=201907191303'></script>
+    <script src='js/BDCompare.js?time=201907191303'></script>
+    <script src='js/POI.js?time=201907191303'></script>
+    <script src='js/index.js?time=201907191303'></script>
+</body>
+
+</html>

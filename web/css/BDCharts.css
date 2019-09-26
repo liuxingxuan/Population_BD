@@ -1,0 +1,377 @@
+.BDChartsBack {
+    background-color: rgba(41, 45, 53, 0.75) !important;
+}
+
+.BDCharts1ItemContainer {
+    overflow-y: auto;
+}
+
+.BDCharts1ItemContainer::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.BDCharts1ItemContainer::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgb(44, 92, 110);
+}
+
+.BDCharts1ItemContainer::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgba(54, 58, 66, 0.75);
+}
+
+.BDCharts1Item {
+    color: #6df3ff;
+    display: inline-block;
+    width: 40%;
+    margin: 1% 5%;
+    padding: 0.5em 0%;
+    text-align: center;
+    background-color: #1f2024;
+    font-size: 1.6vh;
+}
+
+.BDCharts4Item {
+    display: inline-block;
+    background-color: rgb(31, 32, 36);
+    color: rgb(22, 136, 173);
+    width: 40%;
+    height: 40%;
+    margin: 2% 5%;
+}
+
+.BDCharts4Item .BDCharts4ItemTitle {
+    font-size: 1.8vh;
+    text-align: center;
+    height: 30%;
+    letter-spacing: 0.1em;
+}
+
+.BDCharts4Item .BDCharts4ItemContent {
+    font-size: 3.6vh;
+    text-align: center;
+    height: 70%;
+    color: #6df3ff;
+}
+
+#BDFlow {
+    position: relative;
+}
+
+#BDFlow div {
+    height: 30px;
+    width: 10px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    margin-right: 2%;
+    float: left;
+}
+
+#BDFlow div.d {
+    background-image: url(../img/xiaoren_d.png);
+}
+
+#BDFlow div.n {
+    background-image: url(../img/xiaoren_n.png);
+}
+
+#BDFlow div.zero {
+    background-image: url(../img/xiaoren_zero.png);
+}
+
+#BDTraffic {
+    position: relative;
+}
+
+#BDTraffic div {
+    height: 26px;
+    width: 26px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    margin-right: 2%;
+    float: left;
+}
+
+#BDTraffic div.d {
+    background-image: url(../img/huangxing.png);
+}
+
+#BDTraffic div.dhalf {
+    background-image: url(../img/banxing.png);
+}
+
+#BDTraffic div.n {
+    background-image: url(../img/heixing.png);
+}
+
+#BDCharts5 .BDCharts5Item {
+    height: 13%;
+    width: 90%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 1.6vh;
+    padding-left: 10%;
+}
+
+#BDCharts5 .BDCharts5Item div {
+    text-align: center;
+    display: inline-block;
+}
+
+#BDCharts5 .BDCharts5Item div.one {
+    width: 10%;
+}
+
+#BDCharts5 .BDCharts5Item div.two {
+    width: 25%;
+}
+
+#BDCharts5 .BDCharts5Item div.three {
+    text-align: right;
+    color: rgb(0, 246, 255);
+    height: 22px;
+    line-height: 40px;
+    background-image: url(../img/信用卡.png);
+    background-size: 22px 22px;
+    position: relative;
+    top: 5px;
+}
+
+#BDCharts5 .BDCharts5Item div span {
+    height: 30px;
+    color: white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+
+#BDCharts5 .BDCharts5Item div span.oneString {
+    padding: 0.25em 0.7em;
+}
+
+#BDCharts5 .BDCharts5Item div span.first {
+    background: #9e3c3f;
+}
+
+#BDCharts5 .BDCharts5Item div span.second {
+    background: #945b1f;
+}
+
+#BDCharts5 .BDCharts5Item div span.third {
+    background: #877223;
+}
+
+#BDCharts5 .BDCharts5Item div span.rest {
+    background: rgb(23, 24, 27);
+}
+
+#fullScreenCharts .BDCharts5Item {
+    height: 7%;
+    width: 90%;
+    margin-bottom: 1%;
+    color: white;
+    font-size: 2vh;
+    padding-left: 25%;
+}
+
+#fullScreenCharts .BDCharts5Item div {
+    text-align: center;
+    display: inline-block;
+}
+
+#fullScreenCharts .BDCharts5Item div.one {
+    width: 10%;
+}
+
+#fullScreenCharts .BDCharts5Item div.two {
+    width: 15%;
+}
+
+#fullScreenCharts .BDCharts5Item div.three {
+    text-align: right;
+    color: rgb(0, 246, 255);
+    height: 44px;
+    background-image: url(../img/信用卡.png);
+    background-size: 44px 44px;
+    background-position-y: center;
+    position: relative;
+    top: 10px;
+}
+
+#fullScreenCharts .BDCharts5Item div span {
+    height: 30px;
+    color: white;
+    padding: 0.25em 0.4em;
+    font-weight: bold;
+}
+
+#fullScreenCharts .BDCharts5Item div span.oneString {
+    padding: 0.25em 0.7em;
+}
+
+#fullScreenCharts .BDCharts5Item div span.first {
+    background: #9e3c3f;
+}
+
+#fullScreenCharts .BDCharts5Item div span.second {
+    background: #945b1f;
+}
+
+#fullScreenCharts .BDCharts5Item div span.third {
+    background: #877223;
+}
+
+#fullScreenCharts .BDCharts5Item div span.rest {
+    background: rgb(23, 24, 27);
+}
+
+.CompareChartsBack {
+    background-color: rgba(41, 45, 53, 0.75) !important;
+}
+
+.CompareCharts1Item {
+    color: white;
+    height: 35%;
+}
+
+.CompareCharts1ItemTitle {
+    height: 15%;
+    font-size: 14px;
+    padding: 2% 5%;
+}
+
+.CompareCharts1ItemBar {
+    height: 20%;
+    display: inline-block;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background: linear-gradient(to right, rgb(73, 212, 237), rgb(43, 179, 197));
+}
+
+.CompareCharts1ItemLabel {
+    height: 20%;
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 14px;
+    position: relative;
+    top: -0.25em;
+}
+
+.CompareCharts3Item {
+    padding-left: 10%;
+    height: 40%;
+    color: white;
+}
+
+.CompareCharts3ItemTitle {
+    height: 50%;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.4vh;
+    text-align: left;
+}
+
+.CompareCharts3ItemContent {
+    height: 50%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.CompareCharts3ItemContentNum {
+    display: inline-block;
+    background-color: rgb(46, 98, 109);
+    border: 0.5px solid rgb(73, 219, 255);
+    border-radius: 0.2em;
+    font-size: 2vh;
+    padding: 0.25em 0.5em;
+}
+
+.CompareCharts3ItemContentUnit {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    font-size: 1.4vh;
+}
+
+.CompareCharts4Text {
+    color: white;
+    float: left;
+}
+
+.CompareCharts4Text.one {
+    margin-left: 2%;
+    width: 18%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.CompareCharts4Text.two {
+    width: 38%;
+    text-align: center;
+}
+
+.CompareCharts4Text.title {
+    text-align: center;
+    margin-top: 5px;
+    height: 20%;
+}
+
+.CompareCharts4Text.content {
+    height: 35%;
+}
+
+#CompareCharts4 div.three {
+    height: 30px;
+    width: 10px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+#CompareCharts4 div.three.d {
+    background-image: url(../img/xiaoren_d.png);
+}
+
+#CompareCharts4 div.three.n {
+    background-image: url(../img/xiaoren_n.png);
+}
+
+#CompareCharts4 div.three.zero {
+    background-image: url(../img/xiaoren_zero.png);
+}
+
+#CompareCharts4 div.threeT {
+    height: 26px;
+    width: 26px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+#CompareCharts4 div.threeT.d {
+    background-image: url(../img/huangxing.png);
+}
+
+#CompareCharts4 div.threeT.dhalf {
+    background-image: url(../img/banxing.png);
+}
+
+#CompareCharts4 div.threeT.n {
+    background-image: url(../img/heixing.png);
+}

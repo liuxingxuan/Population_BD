@@ -1,0 +1,36 @@
+.FlowChartsBack{
+    background-color:rgba(41,45,53,0.75) !important;
+}
+
+.FlowCharts1Title,.FlowCharts3Title{
+    font-size: 1.8vh;
+    text-align: center;
+    height:6vh;
+    color:rgb(122,225,255);
+}
+.FlowCharts1Content{
+    font-size: 1.6vh;
+    text-align: left;
+    height:70%;
+    color:white;
+    padding: 0 10%;
+}
+
+#FlowCharts3 table{
+    color:white;
+    font-size: 1.4vh;
+    text-align: center;
+    padding: 0 5%;
+}
+#FlowCharts3 table tr{
+    height:2.5vh;
+}
+#FlowCharts3 table td{
+    width:20%;
+}
+#FlowCharts3 table td:first-child{
+    width:30%;
+}
+#FlowCharts3 table td:last-child{
+    width:50%;
+}
